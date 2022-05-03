@@ -17,12 +17,11 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#66B6E9), to(#4F70E5));
   background: linear-gradient(#66B6E9, #4F70E5);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   font-family: 'Merriweather Sans', sans-serif;
-}
-
-body main {
-  height: 100%;
+  font-size: 1rem;
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6, body p {
@@ -30,8 +29,32 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
   margin: 0;
 }
 
-.current-weather {
+body img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+body main {
   height: 100%;
+}
+
+.search {
+  text-align: center;
+}
+
+.search__box {
+  margin: 2rem auto 0;
+  padding: 10px 16px;
+  border-radius: 50px;
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  font-size: 1rem;
+}
+
+.current-weather {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,9 +68,38 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+  max-height: calc(100% - 70px);
 }
 
 .current-weather .city-name {
-  font-size: "2rem";
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.current-weather__temp {
+  font-size: 6.25rem;
+  margin: 1rem auto;
+}
+
+.current-weather__temp__unit {
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+.current-weather__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.current-weather__info__desc {
+  font-size: 1.25rem;
 }
 /*# sourceMappingURL=style.css.map */
