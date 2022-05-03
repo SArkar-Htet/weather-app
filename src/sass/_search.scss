@@ -1,0 +1,13 @@
+.search {
+    text-align: center;
+    &__box {
+        margin: toRem(32) auto 0;
+        padding: 10px 16px;
+        border-radius: 50px;
+        width: 80%;
+        border: none;
+        outline: none;
+        background-color: $colorWhite;
+        font-size: $fontNormal;
+    }
+}

@@ -1,0 +1,33 @@
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: calc(100% - 70px);
+
+    .city-name {
+        font-size: $fontXl;
+        margin-bottom: toRem(16);
+    }
+
+    &__temp {
+        font-size: $fontXxl;
+        margin: toRem(16) auto;
+
+        &__unit {
+            font-size: $fontNormal;
+            vertical-align: top;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__desc {
+            font-size: $fontLg;
+        }
+    }
+}
