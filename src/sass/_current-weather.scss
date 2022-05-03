@@ -9,15 +9,25 @@
     .city-name {
         font-size: $fontXl;
         margin-bottom: toRem(16);
+
+        @include breakpoint-up(large) {
+            font-size: toRem(50);
+        }
     }
 
     &__temp {
         font-size: $fontXxl;
         margin: toRem(16) auto;
+        @include breakpoint-up(large) {
+            font-size: toRem(120);
+        }
 
         &__unit {
             font-size: $fontNormal;
             vertical-align: top;
+            @include breakpoint-up(large) {
+                font-size: toRem(24);
+            }
         }
     }
 
@@ -28,6 +38,9 @@
 
         &__desc {
             font-size: $fontLg;
+            @include breakpoint-up(large) {
+                font-size: toRem(24);
+            }
         }
     }
 }

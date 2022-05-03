@@ -9,5 +9,14 @@
         outline: none;
         background-color: $colorWhite;
         font-size: $fontNormal;
+
+        @include breakpoint-up(large) {
+            max-width: toRem(300);
+            margin-left: toRem(32);
+        }
+    }
+
+    @include breakpoint-up(large) {
+        text-align: left;
     }
 }

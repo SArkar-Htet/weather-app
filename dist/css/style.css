@@ -54,6 +54,19 @@ body main {
   font-size: 1rem;
 }
 
+@media (min-width: 64em) {
+  .search__box {
+    max-width: 18.75rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .search {
+    text-align: left;
+  }
+}
+
 .current-weather {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,14 +90,32 @@ body main {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 64em) {
+  .current-weather .city-name {
+    font-size: 3.125rem;
+  }
+}
+
 .current-weather__temp {
   font-size: 6.25rem;
   margin: 1rem auto;
 }
 
+@media (min-width: 64em) {
+  .current-weather__temp {
+    font-size: 7.5rem;
+  }
+}
+
 .current-weather__temp__unit {
   font-size: 1rem;
   vertical-align: top;
+}
+
+@media (min-width: 64em) {
+  .current-weather__temp__unit {
+    font-size: 1.5rem;
+  }
 }
 
 .current-weather__info {
@@ -101,5 +132,11 @@ body main {
 
 .current-weather__info__desc {
   font-size: 1.25rem;
+}
+
+@media (min-width: 64em) {
+  .current-weather__info__desc {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
