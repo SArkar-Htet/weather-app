@@ -14,13 +14,20 @@
             <input type="text" class="search__box" placeholder="City name">
         </section>
         <section class="current-weather">
-            <h1 class="city-name">Bago</h1>
-            <h2 class="current-weather__temp">29<span class="current-weather__temp__unit">&deg;C</span></h2>
+            <h1 class="city-name" id="cityName">Bago</h1>
+            
             <div class="current-weather__info">
-                <img src="http://openweathermap.org/img/wn/02d.png" alt="Cloudy" class="current-weather__info__icon">
-                <p class="current-weather__info__desc">Cloudy</p>
+                <h2 class="current-weather__info__temp" id="temp">29</h2>
+            <span class="current-weather__info__unit" id="unit">&deg;C</span>
+            </div>
+
+            <div class="current-weather__condition">
+                <img src="http://openweathermap.org/img/wn/02d.png" alt="Cloudy" class="current-weather__condition__icon" id="icon">
+                <p class="current-weather__condition__desc" id="description">Cloudy</p>
             </div>
         </section>
     </main>
+
+    <script src="./src/js/app.js" type="module"></script>
 </body>
 </html>
