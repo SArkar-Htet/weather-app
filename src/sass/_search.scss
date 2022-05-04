@@ -1,6 +1,6 @@
 .search {
     text-align: center;
-    &__box {
+    &__input {
         margin: toRem(32) auto 0;
         padding: 10px 16px;
         border-radius: 50px;
@@ -14,6 +14,10 @@
             max-width: toRem(300);
             margin-left: toRem(32);
         }
+    }
+
+    &__btn {
+        display: none;
     }
 
     @include breakpoint-up(large) {

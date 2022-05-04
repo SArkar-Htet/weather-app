@@ -11,14 +11,17 @@
 <body>
     <main>
         <section class="search">
-            <input type="text" class="search__box" placeholder="City name">
+            <form action="" method="get" role="search" class="search__form" id="searchForm">
+                <input type="text" class="search__input" placeholder="City name" id="searchInput">
+                <input type="submit" class="search__btn">
+            </form>
         </section>
         <section class="current-weather">
             <h1 class="city-name" id="cityName">Bago</h1>
             
             <div class="current-weather__info">
                 <h2 class="current-weather__info__temp" id="temp">29</h2>
-            <span class="current-weather__info__unit" id="unit">&deg;C</span>
+                <span class="current-weather__info__unit" id="unit">&deg;C</span>
             </div>
 
             <div class="current-weather__condition">
@@ -28,6 +31,7 @@
         </section>
     </main>
 
+    <script src="https://kit.fontawesome.com/a1c0aaa319.js" crossorigin="anonymous"></script>
     <script src="./src/js/app.js" type="module"></script>
 </body>
 </html>

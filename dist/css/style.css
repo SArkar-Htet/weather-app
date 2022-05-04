@@ -43,7 +43,7 @@ body main {
   text-align: center;
 }
 
-.search__box {
+.search__input {
   margin: 2rem auto 0;
   padding: 10px 16px;
   border-radius: 50px;
@@ -55,10 +55,14 @@ body main {
 }
 
 @media (min-width: 64em) {
-  .search__box {
+  .search__input {
     max-width: 18.75rem;
     margin-left: 2rem;
   }
+}
+
+.search__btn {
+  display: none;
 }
 
 @media (min-width: 64em) {
