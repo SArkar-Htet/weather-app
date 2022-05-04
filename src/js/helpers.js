@@ -1,7 +1,6 @@
 const getSelector = selector => document.querySelector(selector);
 
 const getCurrentWeather = (datas) => {
-    console.log(datas);
     let url;
     if (typeof datas == "object") {
         const {latitude, longitude} = datas.coords;
@@ -25,7 +24,6 @@ const getCurrentWeather = (datas) => {
             const {main, name, weather} = data;
             const [conditions] = weather;
             const src = `http://openweathermap.org/img/wn/${conditions.icon}.png`
-            console.log(data);
         
             cityName.innerHTML = name;
             temp.innerHTML = Math.round(main.temp);

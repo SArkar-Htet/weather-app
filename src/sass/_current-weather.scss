@@ -32,6 +32,8 @@
         &__unit {
             font-size: $fontNormal;
             vertical-align: top;
+            cursor: pointer;
+            max-height: toRem(2);
             @include breakpoint-up(large) {
                 font-size: toRem(24);
             }

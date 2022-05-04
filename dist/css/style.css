@@ -126,6 +126,8 @@ body main {
 .current-weather__info__unit {
   font-size: 1rem;
   vertical-align: top;
+  cursor: pointer;
+  max-height: 0.125rem;
 }
 
 @media (min-width: 64em) {
